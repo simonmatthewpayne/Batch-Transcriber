@@ -10,8 +10,22 @@ Runs **entirely offline**, supports **NVIDIA (CUDA)**, **AMD & Intel (DirectML)*
 
 ## 🚀 Quick Start
 
-1. **Download** the ZIP release for Windows 10/11 (64-bit).  
-2. **Unzip** the folder.  
+# Whisper Batch Transcriber
+
+Offline-ready batch audio-to-text transcriber built with [OpenAI Whisper](https://github.com/openai/whisper).
+
+---
+
+## 🔧 Rebuilding the App
+
+1. **Download both files**:
+   - `WhisperBatchTranscriber_part1.bin`
+   - `WhisperBatchTranscriber_part2.bin`
+
+2. **Place them in the same folder** as `reassemble.bat`.
+
+3. **Double-click `reassemble.bat`** — it will rebuild:
+
 3. **Double-click `WhisperBatchTranscriber.exe`**  
 4. Click **Select files …**, choose one or many audio/video files.  
    - Supported: `mp3`, `wav`, `m4a`, `flac`, `aac`, `ogg`, `opus`, `wma`, `mp4`, `mkv`, `mov`, `avi`, `webm`, and more.  
