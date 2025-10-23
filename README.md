@@ -19,8 +19,8 @@ Offline-ready batch audio-to-text transcriber built with [OpenAI Whisper](https:
 ## 🔧 Rebuilding the App
 
 1. **Download both files**:
-   - `WhisperBatchTranscriber_part1.bin`
-   - `WhisperBatchTranscriber_part2.bin`
+   - `WhisperBatchTranscriber_part1.bin` https://github.com/simonmatthewpayne/Batch-Transcriber/releases/download/untagged-7600cffb1c97574dcf58/WhisperBatchTranscriber_part1.bin
+   - `WhisperBatchTranscriber_part2.bin` https://github.com/simonmatthewpayne/Batch-Transcriber/releases/download/untagged-7600cffb1c97574dcf58/WhisperBatchTranscriber_part2.bin
 
 2. **Place them in the same folder** as `reassemble.bat`.
 
