@@ -1,0 +1,2 @@
+This software bundles FFmpeg under the LGPL/GPL license.
+Source: https://ffmpeg.org/

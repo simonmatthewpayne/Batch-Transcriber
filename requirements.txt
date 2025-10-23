@@ -1,0 +1,8 @@
+git+https://github.com/openai/whisper.git
+tiktoken
+psutil
+# pick ONE of the two lines below depending on your machine
+# torch (CPU) – lowest common denominator:
+torch==2.9.0
+# torch-directml for AMD/Intel on Windows:
+# torch-directml
