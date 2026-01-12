@@ -40,11 +40,8 @@ try:
 except Exception:
     torch = None
 
-try:
-    import torch_directml  # type: ignore
-    _DML_AVAILABLE = True
-except Exception:
-    _DML_AVAILABLE = False
+
+_DML_AVAILABLE = False
 
 # --- Whisper asset path safety for dev runs (not needed in final build) ---
 try:
@@ -130,19 +127,9 @@ def recommend_model(info: dict) -> tuple[str, str]:
 def resolve_device(selection: str) -> str:
     sel = selection.lower()
     if sel == "auto":
-        if torch and hasattr(torch, "cuda") and torch.cuda.is_available():
-            return "cuda"
-        if _DML_AVAILABLE:
-            try:
-                _ = torch_directml.device()
-                return "dml"
-            except Exception:
-                pass
-        return "cpu"
+        return "cuda" if torch.cuda.is_available() else "cpu"
     if sel == "cuda":
-        return "cuda" if (torch and torch.cuda.is_available()) else "cpu"
-    if sel == "dml":
-        return "dml" if _DML_AVAILABLE else "cpu"
+        return "cuda" if torch.cuda.is_available() else "cpu"
     return "cpu"
 
 
@@ -425,7 +412,7 @@ class MainWindow(QtWidgets.QMainWindow):
         form.addRow("Model:", self.combo_model)
 
         self.combo_device = QtWidgets.QComboBox()
-        self.combo_device.addItems(["auto", "cpu", "cuda", "dml"])
+        self.combo_device.addItems(["auto", "cpu", "cuda"])
         self.combo_device.setCurrentText("auto")
         form.addRow("Device:", self.combo_device)
 

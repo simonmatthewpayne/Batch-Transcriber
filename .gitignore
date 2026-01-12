@@ -1,6 +1,23 @@
+# Python
 __pycache__/
+*.pyc
+
+# Virtual environments
 .venv/
+venv_*/
+
+# PyInstaller
 build/
 dist/
+*.spec
+
+# Whisper / caches
+.cache/
+
+# Local assets
 models/
 ffmpeg/
+
+# Test artefacts
+*.mp4
+*_transcript.txt
