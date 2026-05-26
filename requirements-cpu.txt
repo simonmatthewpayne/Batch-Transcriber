@@ -1,5 +1,0 @@
-# Core dependencies (CPU-safe)
-git+https://github.com/openai/whisper.git
-tiktoken
-psutil
-PySide6

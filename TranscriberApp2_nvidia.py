@@ -1,3 +1,5 @@
+#transcriberApp-Nvidia 
+#Author: Dr Simon Payne
 # Modernised UI for Whisper Batch Transcriber (PySide6)
 # ----------------------------------------------------
 # Goals

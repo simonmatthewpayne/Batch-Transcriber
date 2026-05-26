@@ -1,23 +1,25 @@
-# Python
-__pycache__/
-*.pyc
-
-# Virtual environments
 .venv/
-venv_*/
-
-# PyInstaller
+__pycache__/
 build/
 dist/
 *.spec
 
-# Whisper / caches
-.cache/
-
-# Local assets
-models/
+# Runtime/generated files
 ffmpeg/
-
-# Test artefacts
-*.mp4
+models/
+*.pt
 *_transcript.txt
+*_transcript_ERROR.txt
+
+# Local/dev-only variants
+TranscriberApp.py
+TranscriberApp2.py
+TranscriberApp2_amd.py
+requirements-cpu.txt
+requirements-cuda-cu121.txt
+reassemble.bat
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
